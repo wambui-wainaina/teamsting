@@ -18,8 +18,9 @@ ActiveRecord::Schema.define(version: 20200307113110) do
     t.string "age_rating"
     t.text "description"
     t.string "title"
-
-ActiveRecord::Schema.define(version: 20200307101426) do
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "topics", force: :cascade do |t|
     t.datetime "created_at", null: false
